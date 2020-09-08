@@ -6,58 +6,89 @@
       <main class="page">
         @@include('_header.html', {})
         <div class="main-screen">
-          <div class="main-screen__bg"></div>
+          <div class="main-screen__bg ibg">
+            <img src="img/bg_main.jpg" alt="">
+          </div>
         </div>
         <div class="content">
-          <article class="content__title">
-            <img src="./img/icons/title/01.png" alt="">
-            <h1>A NEW GENERATION OF VINTAGE BIKE</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-          </article>
-          <section class="content__section-1">
-            <div class="content__section-1 column-1">
-              <img src="./img/brands/01.jpg" alt="">
+          <section class="generation">
+            <div class='container'>
+              <div class="generation__block block">
+                <div class="block__icon"><img src="img/icons/title/01.png" alt=""></div>
+                <h1 class="block__title">A NEW GENERATION OF VINTAGE BIKE</h1>
+                <p class="block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+              </div>
             </div>
-            <div class="content__section-1 column-2">
-              <div class="column-2__context">
-                <img src="./img/icons/title/02.png" alt="">
+          </section>
+
+          <section class="section-1">
+            <div class="section-1__column-1 ibg">
+              <img src="../img/brands/01.jpg" alt="">
+            </div>
+            <div class="section-1__column-2">
+              <div class="column-2 block">
+                <div class="block__icon"><img src="./img/icons/title/02.png" alt=""></div>
                 <div>
-                  <h2>vintage Oliva</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+                  <h2 class="block__title">vintage Oliva</h2>
+                  <p class="block__text_section">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                   <span></span>
                 </div>
               </div>
-              <div>
-                <img src="./img/brands/02.jpg" alt="">
+              <div class="block__image ibg">
+                <img src="../img/brands/02.jpg" alt="">
               </div>
             </div>
           </section>
 
-          <section class="content__section-2">
-            <div>
-              <div class="content__section-1 column-2">
-                <div class="column-2__context">
-                  <img src="./img/icons/title/03.png" alt="">
-                  <div>
-                    <h2>La Boriosa</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
-                    <span></span>
-                  </div>
+          <section class="section-2">
+            <div class="section-2__column-1">
+              <div class="column-1 block">
+                <div class="block__icon"><img src="./img/icons/title/03.png" alt=""></div>
+                <div>
+                  <h2 class="block__title">vintage Oliva</h2>
+                  <p class="block__text_section">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+                  <span></span>
                 </div>
-
               </div>
-              <div class="content__section-2 column-1">
-                <img src="./img/brands/03.jpg" alt="">
+              <div class="block__image ibg">
+                <img src="../img/brands/03.jpg" alt="">
               </div>
             </div>
-            <div>
-              <img src="./img/brands/04.jpg" alt="">
+            <div class="section-2__column-2 ibg">
+              <img src="../img/brands/04.jpg" alt="">
             </div>
           </section>
+
+          <section class="section-3">
+            <div class="section-3__column-1 ibg">
+              <img src="../img/brands/05.jpg" alt="">
+            </div>
+            <div class="section-3__column-2">
+              <div class="column-2 block">
+                <div class="block__icon"><img src="./img/icons/title/04.png" alt=""></div>
+                <div>
+                  <h2 class="block__title">retrò Bike - M. Hulot</h2>
+                  <p class="block__text_section">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+                  <span></span>
+                </div>
+              </div>
+              <div class="block__image ibg">
+                <img src="./img/brands/06.jpg" alt="">
+              </div>
+            </div>
+            <div class="section-3__column-3 ibg">
+              <img src="../img/brands/07.jpg" alt="">
+            </div>
+          </section>
+
         </div>
+
+
+
+
         @@include('_footer.html', {})
-      </main>     
+      </main>         
     </div>
-    <script src='/js/script.min.js'></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
