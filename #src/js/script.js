@@ -1,6 +1,6 @@
 let slickDots = document.querySelector(".slick-dots")
 let btn = slickDots.getElementsByTagName("li")
-
+let menu = document.querySelector(".icon-menu")
 
 let ready = () => {
 	document.querySelectorAll(".ibg").forEach(el => {
@@ -16,6 +16,13 @@ let ready = () => {
 		el.addEventListener('click', following)
 	})
 
+	menu.addEventListener('click', (e) => {
+		e.currentTarget.classList.toggle('active')
+		if ( e.currentTarget.classList.contains('active') === false ) {
+			document.querySelector(".menu__body").style.display = 'none'
+		} else document.querySelector(".menu__body").style.display = 'block'
+		
+	})
 }
 
 const slides = document.querySelectorAll(".body__item")

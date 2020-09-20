@@ -58,7 +58,6 @@
 		text-transform: uppercase;
 		letter-spacing: 2.6px;
     }
-
     @media (max-width:767px){
         &__body {
             position: fixed;
@@ -66,18 +65,16 @@
             height: 100%;
             top: 0;
             left: 0;
-            overflow: auto;
             background-color:#4d4959;
             padding: 150px 0px 20px 0px;
-            @include tr(0px,-100%,0px);
-            @include anim(0.3s,0s);
+            overflow: auto;
             &.active{
                 @include tr(0px,0px,0px);
             }
         }
         &__list {
             flex-direction: column;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
             li{
                 padding: 0 0 45px 0;
@@ -116,7 +113,7 @@
 		height: 18px;
 		cursor: pointer;
 		z-index: 5;
-		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #4d4959;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #fff;
 			&:first-child{top: 0px;}
 			&:last-child{top: auto;bottom: 0px;}
 		}
@@ -127,4 +124,24 @@
 			}
 		}
 	}
+}
+.header-menu__icon{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width:30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+    span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+        &:first-child{top: 0px;}
+        &:last-child{top: auto;bottom: 0px;}
+    }
+    &.active{
+        span{@include scale(0);
+            &:first-child{@include rotate(-45deg);top: 8px;}
+            &:last-child{@include rotate(45deg);bottom: 8px;}
+        }
+    }
 }
