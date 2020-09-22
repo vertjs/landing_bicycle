@@ -21,8 +21,9 @@ let ready = () => {
 		if ( e.currentTarget.classList.contains('active') === false ) {
 			document.querySelector(".menu__body").style.display = 'none'
 		} else document.querySelector(".menu__body").style.display = 'block'
-		
 	})
+	
+	console.log(document.querySelector('.header__row').scrollTop)
 }
 
 const slides = document.querySelectorAll(".body__item")
