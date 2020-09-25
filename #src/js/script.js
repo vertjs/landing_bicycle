@@ -1,6 +1,8 @@
-let slickDots = document.querySelector(".slick-dots")
-let btn = slickDots.getElementsByTagName("li")
-let menu = document.querySelector(".icon-menu")
+const slickDots = document.querySelector(".slick-dots")
+const btn = slickDots.getElementsByTagName("li")
+const menuIcon = document.querySelector(".icon-menu")
+const menuBody = document.querySelector(".menu__body")
+const slides = document.querySelectorAll(".body__item")
 
 let ready = () => {
 	document.querySelectorAll(".ibg").forEach(el => {
@@ -16,18 +18,11 @@ let ready = () => {
 		el.addEventListener('click', following)
 	})
 
-	menu.addEventListener('click', (e) => {
-		e.currentTarget.classList.toggle('active')
-		if ( e.currentTarget.classList.contains('active') === false ) {
-			document.querySelector(".menu__body").style.display = 'none'
-		} else document.querySelector(".menu__body").style.display = 'block'
+	menuIcon.addEventListener('click', (e) => {
+		menuIcon.classList.toggle("active")
+		menuBody.classList.toggle("active")
 	})
-	
-	console.log(document.querySelector('.header__row').scrollTop)
 }
-
-const slides = document.querySelectorAll(".body__item")
-
 
 function following(e) {
 	slickDots.querySelectorAll("li").forEach(el => el.classList.remove("active"))

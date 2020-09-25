@@ -527,23 +527,31 @@ $minWidth: 320px;
   }
 }
 
-.shop__discover {
-  height: 200px;
-  background-color: #282f35;
-  width: 100%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  button {
+.shop {
+  &__discover {
+    background-color: #282f35;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 75px 0;
+    @media (max-width: 1100px) {
+      padding: 50px 0;
+    }
+  }
+  &__btn {
     font-family: 'Lato-Bold';
     font-size: 14px;
+    line-height: 48px;
     text-transform: uppercase;
     color: white;
-    padding: 20px 60px;
     border: 1px solid #94979a;
     background-color: #282f35;
-    letter-spacing: 3.6px;
-    margin: 57px 0;
+    letter-spacing: 2.8px;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+		height: 50px;
   }
 }
 
