@@ -83,35 +83,24 @@
 
           <section class="slider">
             <div class='container'>
-              <div class="slider body">
-                <div class="body__item">
-                  <div class="body__icon"><img src="./img/icons/twitter.png" alt=""></div>
-                  <h3 class="body__title">AOD New York @aod <span>/ 35 min</span></h3>
-                  <div class="body__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
+              <div class="slider__body">
+                <div class="slider__item">
+                  <div class="slider__icon"><img src="./img/icons/twitter.png" alt=""></div>
+                  <h3 class="slider__title">AOD New York @aod <span>/ 35 min</span></h3>
+                  <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
                 </div>
-                <div class="body__item">
-                  <div class="body__icon"><img src="./img/icons/twitter.png" alt=""></div>
-                  <h3 class="body__title">Bicycle Moscow @bicycle <span>/ 35 min</span></h3>
-                  <div class="body__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
+                <div class="slider__item">
+                  <div class="slider__icon"><img src="./img/icons/twitter.png" alt=""></div>
+                  <h3 class="slider__title">Bicycle Moscow @bicycle <span>/ 35 min</span></h3>
+                  <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
                 </div>
-                <div class="body__item">
-                  <div class="body__icon"><img src="./img/icons/twitter.png" alt=""></div>
-                  <h3 class="body__title">Rem Madrid @rem <span>/ 35 min</span></h3>
-                  <div class="body__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
+                <div class="slider__item">
+                  <div class="slider__icon"><img src="./img/icons/twitter.png" alt=""></div>
+                  <h3 class="slider__title">Rem Madrid @rem <span>/ 35 min</span></h3>
+                  <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
                 </div>
               </div>
             </div>
-            <ul class="slider slick-dots">
-              <li class="active">
-                <button>0</button>
-              </li>
-              <li>
-                <button>1</button>
-              </li>
-              <li>
-                <button>2</button>
-              </li>
-            </ul>
           </section>
 
           <section class="shop">
@@ -211,17 +200,26 @@
             <div class="container">
               <div class="saddle__logo"><img src="./img/logo.png" alt="logotip"></div>
               <h2>Stay on the saddle!</h2>
-              <div class="email">
-                <input type="email" placeholder="enter your email...">
-                <button>GO</button>
-              </div>
-            </div>
 
+              <form action="#" class="saddle__form">
+								<div class="saddle__input">
+									<input autocomplete="off" type="text" name="form" placeholder="enter your email..." class="input req email">
+								</div>
+								<div class="saddle__button">
+									<button type="submit" class="saddle__btn" onclick=validateEmail>GO</button>
+								</div>
+              </form>
+              
+            </div>
           </section>
         </div>
         @@include('_footer.html', {})
       </main>         
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+
   </body>
 </html>
